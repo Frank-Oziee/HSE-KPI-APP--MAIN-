@@ -1,0 +1,722 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* STYLING FOR SCREEN SIZES FROM 501px ABOVE: */
+
+/* STYLING OF THE BODY: */
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin:0;
+    font-size: 16px;
+    font-weight: 500;
+    margin:  auto;
+    max-width: 1200px; /*if i want the page to spread end to end
+                        of the web page or browser i will remove this 'max-width', 'max-width'
+                        helps limits this stretching of the page on the web browser.*/
+    min-width: 500px; /*This is make the content of page not shrink to the device screen sides when reducing/shrinking the page or even using the page through different screen sizes, in as much as those screen sizes 'px' falls within this set min-width here, just like faceboob, instagram and other major apps, that doesn't shrink into the screen sides of any device no matter the device 'px' size. */
+    height:100vh;
+}
+
+
+
+/* STYLING OF THE CLASSES: */
+
+/* styling of 'cover class name' element : */
+
+.cover {
+    border: 1px solid rgba(211, 209, 209, 0.432);
+    display:flex ;
+    flex-direction: column;
+    width:1200px;
+    align-items : center;
+    justify-content: center;
+    background-color: rgba(196, 196, 209, 0.329);
+
+}
+
+/* styling of elements with 'header class name': */
+
+.header{
+    width: 100%;
+    align-items : center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0px 30px 0px;
+}
+
+.headerinner {
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0 15px 0 ;
+    /* border: 1px solid black; */
+    width: 80%;
+    align-items : center;
+    justify-content:space-between ;
+    background-color: rgb(1, 1, 82);
+
+}
+
+.headerH2 {
+    font-family:  Georgia, Times, 'Times New Roman', serif ;
+    padding: 8px;
+    color: rgb(255, 255, 255);
+    font-weight: 1000;
+    word-spacing:5px ;
+    letter-spacing: 3px;
+}
+
+
+.headerPImg {
+    width: 100px;
+    padding: 8px;
+    height: 100px;
+    box-shadow: 1px 4px 5px rgba(168, 136, 136, 0.568);
+
+}
+
+.headerH1 {
+    font-family:fantasy ;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    border: 1px solid rgba(241, 146, 135, 0.637);
+    border-radius: 5px;
+    padding: 8px;
+    margin: 10px 0 20px 0px;
+    box-shadow: 0.5px 4px 10px rgba(165, 116, 116, 0.568);
+}
+
+
+/* styling of section one elements: */
+
+.sectionOne {
+    display:flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    justify-content: center ;
+}
+
+.sectionOneDiv1 {
+    display:flex;
+    width: 100%;
+    border-bottom: 1px solid rgba(188, 188, 202, 0.781);
+    margin: 0 0 10px 0;
+    align-self: center; /*this will make only the contents in the element align to center of their individual 'x' axis and not according to the center of the  'x'  axis of its/their mother/parent containers or elements*/
+    justify-self: center; /*this will make only the contents in the element align to center of their individual 'y' axis and not according to the center of the  'y' axis of its/their mother/parent containers or elements*/
+}
+
+.sectionOneDiv1H3 {
+    border-bottom: 1px solid rgba(177, 145, 145, 0.726) ;
+    border-right: 1px solid rgba(177, 145, 145, 0.726)  ;
+    border-radius: 0 0 5px 0;
+    margin: 0 30px 10px 0px;
+    padding: 4px 4px 3px 0px;
+}
+
+.sectionOneDiv2 {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid rgba(188, 188, 202, 0.781);
+    margin: 8px 0 10px 0;
+    align-self: center; /*this will make only the contents in the element align to center of their individual 'x' axis and not according to the center of the  'x'  axis of its/their mother/parent containers or elements*/
+    justify-self: center; /*this will make only the contents in the element align to center of their individual 'y' axis and not according to the center of the  'y' axis of its/their mother/parent containers or elements*/
+
+}
+
+.sectionOneDiv2H3 {
+    border-bottom: 1px solid rgba(177, 145, 145, 0.726);
+    border-right: 1px solid rgba(177, 145, 145, 0.726);
+    border-radius: 0 0 5px 0;
+    margin:0 30px 10px 0 ;
+    padding: 4px 4px 3px 0px;
+}
+
+.sectionOneDiv2P input {
+    width: 120px;
+}
+
+.sectionOneDiv3 {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid rgba(188, 188, 202, 0.781);
+    margin: 8px 0 13px 0;
+    align-self: center;
+}
+
+.sectionOneDiv3div {
+    display: flex;
+}
+
+.sectionOneDiv3H3 {
+    border-bottom: 1px solid rgba(177, 145, 145, 0.726);
+    border-right: 1px solid rgba(177, 145, 145, 0.726);
+    border-radius: 0 0 5px 0;
+    margin: 0 20px 10px 0;
+    padding: 4px 4px 3px 0;
+}
+
+.sectionOneDiv3P {
+    display: flex;
+}
+
+.sectionOneDiv3P span {
+    margin: 0 5px 0 5px;
+}
+
+.sectionOneDiv3P button {
+    margin-left: 5px;
+}
+
+.sectionOneDiv3P button {
+    width: 80px;
+    height: 27px;
+    padding: 4px;
+}
+
+.sectionOneDiv3P1 {
+    margin: 0 0px 0 10px;
+    width: 500px;
+
+}
+
+.sectionOneDiv3P1 span {
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.sectionOneDiv3P1 button {
+    width: 80px;
+    height: 25px;
+    padding: 4px;
+    margin: 0 0 8px 0;
+}
+
+#dailyTotalDelB {
+    width: 30px;
+    width: 30px;
+}
+
+.mpSubmitSpan {
+    font-size: 10.4px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(197, 207, 204, 0.562);
+    border-radius: 5px;
+    border: none;
+    padding: 6px 2px 0 2px;
+    width: 87px;
+    min-width: 87px;
+    height: 25px;
+}
+
+.mpSubmit {
+    background-color:rgba(235, 228, 165, 0.747);
+    /* background-color: rgba(197, 207, 204, 0.562); */
+    border-radius: 5px;
+    font-size:13px;
+    border: none;
+    padding: 4px;
+    width: 35px;
+    min-width: 35px;
+    height: 25px;
+}
+
+.sectionOneDiv4 {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid rgba(188, 188, 202, 0.781);
+    align-self: center;
+    justify-self: center;
+    margin: 8px 0 30px 0;
+}
+
+.sectionOneDiv4H3 {
+    border-bottom: 1px solid rgba(177, 145, 145, 0.726);
+    border-right: 1px solid rgba(177, 145, 145, 0.726);
+    border-radius: 0 0 5px 0;
+    margin: 0 30px 10px 0;
+    padding: 4px 4px 3px 0;
+}
+
+.sectionOneDiv4 input {
+    width: 180px;
+}
+
+.cummulative {
+    background-color:rgba(235, 228, 165, 0.747);
+    /* background-color: rgba(197, 207, 204, 0.562); */
+    border-radius: 5px;
+    font-size:13px;
+    border: none;
+    padding: 4px;
+    width: 50px;
+    min-width: 50px;
+    height: 25px;
+}
+
+#cumDelButtn {
+    width: 30px;
+    width: 30px;
+}
+
+/* styling of section two elements: */
+
+.sectionTwo {
+    width: 85%;
+    margin: 0 0 30px 0;
+}
+
+.sectionTwoTable {
+    background-color: rgba(153, 179, 180, 0.432);
+    border-radius: 6px;
+    height: 470px;
+    border: 1px solid rgb(211, 199, 199);
+    width: 100%;
+
+}
+
+.sectionTwoTable td {
+    border: 2px solid rgba(20, 18, 15, 0.219);
+    border-radius: 4px;
+}
+
+
+.sectionTwoTable tr {
+    text-align: center;
+    background-color: rgb(175, 198, 228);
+}
+
+.sectionTwoTable td:last-child button {
+    width: 30px;
+}
+
+.sectionTwoTable th {
+    border: 1px solid rgba(204, 180, 101, 0.527);
+    height: 50px;
+    border-radius: 4px;
+    background-color: rgb(1, 1, 82);
+    color: white;
+}
+
+/* styling of section three elements: */
+
+.sectionThree {
+    width: 85%;
+    margin: 0 0 10px 0;
+}
+
+.sectionThreeTable {
+    background-color: rgba(153, 179, 180, 0.432);
+    border-radius: 6px;
+    height: 350px;
+    border: 1px solid rgb(211, 199, 199);
+    width: 100%;
+}
+
+#sectionThreeTable {
+    background-color: rgba(153, 179, 180, 0.432);
+    border-radius: 6px;
+    border: 1px solid rgb(211, 199, 199);
+    width: 100%;
+}
+
+.sectionThreeTable td {
+    border: 1px solid rgba(97, 130, 192, 0.548);
+    border-radius: 4px;
+}
+
+.sectionThreeTable tr {
+    text-align: center;
+    background-color: rgb(175, 198, 228);
+    width: 100%;
+}
+
+.sectionThreeTable td:last-child button {
+    width: 30px;
+}
+
+#sectionThreeTable th {
+    border: 1px solid rgba(139, 57, 57, 0.432);
+    height: 50px;
+    border-radius: 4px;
+    background-color: rgba(2, 2, 48, 0.514);
+    color: white;
+}
+
+/* GENERAL ELEMENT STYLING: */
+
+button {
+    background-color: rgb(1, 1, 82);
+    color: white;
+    border-radius: 7px;
+    border-style:unset ;
+    border: 1px solid rgba(216, 182, 182, 0.877);
+    width: 80px;
+    height: 25px;
+    padding: 4px;
+}
+
+input {
+    border-radius: 5px;
+    border: none;
+    padding: 4px;
+    width: 100px;
+    height: 25px;
+    font-size: 10px;
+    background-color: rgba(197, 207, 204, 0.562);
+}
+
+input:hover,
+input:focus {
+    background-color: rgba(235, 228, 165, 0.747);
+}
+
+td input{
+    background-color:rgba(231, 229, 221, 0.479) ;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 500;
+    color: rgb(1, 1, 82);
+    margin-top: 0;
+}
+
+
+/* RE-STYLING FOR SCREEN SIZE: 500PX TO 351PX: */
+
+@media (max-width: 500px) { /*styling for small screen now using this.
+    NOTE: max-width on media query is for small screen while min-width is for big screens
+    for in styling it is advisable to style for small screens first*/
+
+
+    body {
+        font-family: 'Arial Narrow', Arial, sans-serif;
+        font-size: 11px;
+        font-weight: 600;
+        width: 340px;
+        overflow-x: hidden;
+        min-width: 340px; /*This will help the content in the body not shrink below this 'px', even if the app page get reduce or shrinked below the stated 'px' on  this line. */ /*  ALSO NOTE:  This is make the content of page not shrink to the device screen sides when reducing/shrinking the page or even using the page through different screen sizes, in as much as those screen sizes 'px' falls within this set min-width here, just like faceboob, instagram and other major apps, that doesn't shrink into the screen sides of any device no matter the device 'px' size. */
+    }
+
+    .cover {
+        border: 1px solid rgba(211, 209, 209, 0.432);
+        display:flex ;
+        flex-direction: column;
+        width:340px;
+        align-items : center;
+        justify-content: center;
+        background-color: rgba(196, 196, 209, 0.329);
+        /* min-width: 300px; */
+    }
+
+    .headerinner {
+        display: flex;
+        padding: 6px;
+        border-radius: 6px;
+        margin: 10px 0 15px 0 ;
+        /* border: 1px solid black; */
+        width: 330px;
+        align-items : center;
+        justify-content:space-between ;
+        background-color: rgb(1, 1, 82);
+        box-shadow: 0.5px 0px 3px 2px rgba(107, 136, 122, 0.384);
+
+    }
+
+    .headerPImg {
+        padding: 6px;
+        width: 60px;
+        height: 60px;
+        box-shadow: 1px 4px 5px rgba(168, 136, 136, 0.568);
+
+    }
+
+    .headerH2 {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        color:  rgb(96, 238, 195);
+
+    }
+
+    .headerH1 {
+        font-family:fantasy ;
+        border: 1px solid rgba(135, 201, 236, 0.514);
+        margin: 10px 0 10px 0px;
+        box-shadow: 0.5px 4px 10px rgba(170, 199, 117, 0.568);
+    }
+
+    .sectionOneDiv3 {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        border-bottom: 1px solid rgba(188, 188, 202, 0.781);
+        margin: 8px 0 13px 0;
+        align-self: center;
+    }
+
+    .sectionOneDiv3div {
+        display: flex;
+        flex-direction: column;
+        width:300px;
+    }
+
+    .sectionOneDiv3H3 {
+        border-radius: 0 0 5px 0;
+        margin: 0 20px 10px 0;
+        padding: 4px 0px 3px 0;
+
+    }
+
+    .sectionOneDiv3P1 span {
+        text-align: center;
+        word-wrap: break-word;
+    }
+
+    .sectionOneDiv3P1 {
+        margin: 0 0px 0 10px;
+        width: 300px;
+
+    }
+
+    input {
+        border-radius: 5px;
+        border: none;
+        padding: 4px;
+        width: 100px;
+        height: 18.5px;
+        font-size: 10px;
+        background-color: rgba(96, 238, 195, 0.562);
+    }
+
+    td input{
+        background-color: rgba(218, 223, 217, 0.63);
+    }
+
+    button {
+        background-color: rgb(1, 1, 82);
+        color: white;
+        border-radius: 8px;
+        border: 1px solid rgba(187, 171, 171, 0.788);
+        width: 55px;
+        height: 20px;
+        padding: 2px;
+        font-size: 11px;
+    }
+
+    .sectionOneDiv3P1 button {
+        width: 55px;
+        height: 20px;
+        padding: 2px;
+        margin: 0 0 8px 0;
+    }
+
+    .sectionOneDiv3P button {
+        width: 55px;
+        height: 20px;
+        padding: 2px;
+    }
+
+    .sectionTwoTable td:last-child button
+    .sectionThreeTable td:last-child button {
+        width: 22px;
+        width: 22px;
+        padding: 2px;
+    }
+
+    .sectionTwoTable th  {
+        height: 40px;
+    }
+
+    .sectionThreeTable th  {
+            height: 40px;
+    }
+
+    .sectionTwoTable  .sectionThreeTable {
+        background-color: rgba(167, 205, 206, 0.432);
+        border-radius: 5px;
+        height: 450px;
+        border: 1px solid rgb(211, 199, 199);
+        width: 300px;
+
+    }
+}
+
+
+/* RE-STYLING FOR SCREEN SIZE: 350PX BELOW: */
+
+@media (max-width: 350px) { /*styling for small screen now using this.
+    NOTE: max-width on media query is for small screen while min-width is for big screens
+    for in styling it is advisable to style for small screens first*/
+
+
+    body {
+        font-family: 'Arial Narrow', Arial, sans-serif;
+        font-size: 11px;
+        font-weight: 600;
+        width: 300px;
+        overflow-x: hidden;
+        background-color: rgba(120, 240, 200, 0.377);
+        min-width: 300px; /*This will help the content in the body not shrink below this 'px', even if the app page get reduce or shrinked below the stated 'px' on  this line. */  /*  ALSO NOTE:  This is make the content of page not shrink to the device screen sides when reducing/shrinking the page or even using the page through different screen sizes, in as much as those screen sizes 'px' falls within this set min-width here, just like faceboob, instagram and other major apps, that doesn't shrink into the screen sides of any device no matter the device 'px' size. */
+    }
+
+    .cover {
+        border: 1px solid rgba(211, 209, 209, 0.432);
+        display:flex ;
+        flex-direction: column;
+        width:300px;
+        align-items : center;
+        justify-content: center;
+        background-color: rgba(196, 196, 209, 0.486);
+        /* min-width: 300px; */
+    }
+
+    .headerinner {
+        display: flex;
+        flex-direction:column-reverse ;
+        padding: 6px;
+        border-radius: 6px;
+        margin: 10px 0 15px 0 ;
+        /* border: 1px solid black; */
+        width: 280px;
+        align-items : center;
+        justify-content:space-between ;
+        background-color: rgb(1, 1, 82);
+        box-shadow: 0.5px 0px 3px 2px rgba(107, 136, 122, 0.384);
+
+    }
+
+    .headerPImg {
+        padding: 5px;
+        width: 50px;
+        height: 50px;
+        box-shadow: 0.4px 4px 10px rgba(228, 238, 96, 0.589);
+
+    }
+
+    .headerH2 {
+        font-family: Tahoma, Geneva, Verdana, sans-serif ;
+        color:  rgb(236, 236, 234);
+
+    }
+
+    .headerH1 {
+        font-family:fantasy ;
+        font-size: 20px;
+        background-color: rgba(10, 5, 82, 0.911);
+        color: whitesmoke;
+        border: 1px solid  rgba(228, 238, 96, 0.699);
+        margin: 10px 0 10px 0px;
+        width: 250px;
+        box-shadow: 0.5px 4px 10px rgba(197, 223, 151, 0.568);
+    }
+
+    .sectionOneDiv3 {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        border-bottom: 1px solid rgba(188, 188, 202, 0.781);
+        margin: 8px 0 13px 0;
+        align-self: center;
+    }
+
+    .sectionOneDiv3div {
+        display: flex;
+        flex-direction: column;
+        width:280px;
+        margin: 0 0 0 15px;
+    }
+
+    .sectionOneDiv3H3 {
+        border-radius: 0 0 5px 0;
+        margin: 0 20px 10px 0px;
+        padding: 4px 0px 8px 0;
+
+    }
+
+    .sectionOneDiv3P1 span {
+        text-align: center;
+        word-wrap: break-word;
+    }
+
+    .sectionOneDiv3P1 {
+        margin: 0 0px 0 15px;
+        width: 280px;
+
+    }
+
+    .sectionOneDiv3P input {
+        width: 90px;
+    }
+
+    input {
+        border-radius: 5px;
+        border: none;
+        padding: 4px;
+        width: 80px;
+        height: 18px;
+        font-size: 10px;
+        background-color: rgba(217, 247, 83, 0.404);
+    }
+
+    td input{
+        background-color: rgba(218, 223, 217, 0.63);
+    }
+
+    button {
+        background-color: rgb(1, 1, 82);
+        color: white;
+        border-radius: 8px;
+        border: 1px solid rgba(187, 171, 171, 0.788);
+        width: 55px;
+        height: 20px;
+        padding: 2px;
+        font-size: 11px;
+    }
+
+    .sectionOneDiv3P1 button {
+        width: 55px;
+        height: 20px;
+        padding: 2px;
+        margin: 0 0 8px 0;
+    }
+
+    .sectionOneDiv3P button {
+        width: 55px;
+        height: 20px;
+        padding: 2px;
+    }
+
+    .sectionTwoTable td:last-child button
+    .sectionThreeTable td:last-child button {
+        width: 22px;
+        width: 22px;
+        padding: 2px;
+    }
+
+    .sectionTwoTable th  {
+        height: 40px;
+    }
+
+    .sectionThreeTable th  {
+            height: 40px;
+    }
+
+    .sectionTwoTable  .sectionThreeTable {
+        background-color: rgba(167, 205, 206, 0.432);
+        border-radius: 5px;
+        height: 430px;
+        border: 1px solid rgb(211, 199, 199);
+        width: 300px;
+
+    }
+}
+
+.submitCum{
+    color: rgb(255, 255, 255);
+}
